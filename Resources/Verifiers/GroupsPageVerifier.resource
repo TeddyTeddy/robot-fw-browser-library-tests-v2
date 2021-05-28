@@ -18,7 +18,9 @@ Verify Groups Page Texts
 	GroupsPage.Verify Action Text
 	GroupsPage.Verify Delete Selected Groups Text
 	GroupsPage.Verify Select All Groups Text
-	GroupsPage.Verify Dynamic Text Group X Added Successfully	${group_name}
+	IF 	$group_name
+		GroupsPage.Verify Dynamic Text Group X Added Successfully	${group_name}
+	END
 	GroupsPage.Verify Dynamic Text X of Y Selected
 
 Verify Groups Page Links
@@ -27,11 +29,13 @@ Verify Groups Page Links
 	GroupsPage.Verify Home Link
 	GroupsPage.Verify Authentication and Authorization Link
 	GroupsPage.Verify Add Group Link
-	GroupsPage.Verify Dynamic Link For Group Name		${group_name}
-	GroupsPage.Verify Group Added		${group_name}
+	IF 	$group_name
+		GroupsPage.Verify Dynamic Link For Group Name		${group_name}
+		GroupsPage.Verify Group Added		${group_name}
+	END
 
 Verify Groups Page
-	[Arguments]		${username}		${group_name}
+	[Arguments]		${username}		${group_name}=${EMPTY}
 	Verify Groups Page Texts	 ${username}		${group_name}
 	Verify Groups Page Links	${group_name}
 	GroupsPage.Verify Url

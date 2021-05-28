@@ -5,11 +5,13 @@ Resource			./PO/LoginPage.resource
 Resource			./PO/MainPage.resource
 Resource			./PO/AddGroupPage.resource
 Resource            ./PO/GroupsPage.resource
+Resource            ./PO/ConfirmPage.resource
 Resource			./Verifiers/LoginPageVerifier.resource
 Resource			./Verifiers/MainPageVerifier.resource
 Resource			./Verifiers/TopNavVerifier.resource
 Resource			./Verifiers/AddGroupPageVerifier.resource
 Resource            ./Verifiers/GroupsPageVerifier.resource
+Resource            ./Verifiers/ConfirmPageVerifier.resource
 Resource			./Texts/AddGroupPageTexts.resource
 
 
@@ -55,15 +57,14 @@ Deleting Group
     ...                 Assumes that we are at the main page before executing this keyword
     ...                 After finishing execution, the main page is the current page
     [Arguments]         ${group_name}
-    No Operation
-#     Click On Groups
-#     Select Checkbox For Group  group_name=${group_name}
-#     Select Delete Selected Groups Dropdown
-#     Press Go    # opens confirm_groups_deletions_page
-#     Verify Confirm Page     group_name=${group_name}
-#     Press Confirm Button
-#     Verify Groups Page
-#     Go To Main Page
+    Click On Groups
+    Select Checkbox For Group  group_name=${group_name}
+    Select Delete Selected Groups Dropdown
+    Press Go    # opens confirm_groups_deletions_page
+    Verify Confirm Page     ${VALID_ADMIN_USERNAME}        ${group_name}
+    Press Confirm Button
+    Verify Groups Page      ${VALID_ADMIN_USERNAME}
+    Go To Main Page
 
 Add Group With Permissions
     [Documentation]     Assumes we are in AddGroup Page

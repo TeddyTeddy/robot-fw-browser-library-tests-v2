@@ -14,9 +14,9 @@ Creating Different Groups
     ${BLOG_EDITORS_GROUP_NAME}      ${BLOG_EDITORS_PERMISSIONS}
     ${GROUP_EDITORS_GROUP_NAME}     ${GROUP_EDITORS_PERMISSIONS}
 
-Deleting "Blog Editors" Group
+Deleting Different Groups
     [Documentation]    You can delete as many groups with given group names here
-    ...                as long as they exist in the system, they will be deleted
+    ...                as long as they exist in the system
     [Template]      Deleting Group
     ${BLOG_EDITORS_GROUP_NAME}
     ${GROUP_EDITORS_GROUP_NAME}
