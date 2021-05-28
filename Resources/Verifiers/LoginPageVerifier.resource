@@ -1,13 +1,9 @@
-*** Settings ***
-Resource		../PO/LoginPage.resource
-
-
 *** Keywords ***
 Verify Login Page Texts
-	Verify Page Title
-	Verify Username Title
-	Verify Password Title
-	Verify Login Button Text
+	LoginPage.Verify Page Title
+	LoginPage.Verify Username Title
+	LoginPage.Verify Password Title
+	LoginPage.Verify Login Button Text
 
 
 

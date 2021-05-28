@@ -28,10 +28,12 @@ ${EXPECTED_MAIN_PAGE_URL} 			${BASE_URL}admin/
 
 
 *** Keywords ***
+Go To Main Page
+	Go to		${EXPECTED_MAIN_PAGE_URL}
+
 Verify Url
 	[Documentation]		Waits until the "Logout" Element appears enabled on the upper right side of the page
 	... 				Checks the page URL is the same as expected_main_page_url
-    Wait For Elements State			selector=${MAIN_PAGE_LOCATOR}[logout]		state=visible
     Get Url			assertion_operator=equal		assertion_expected=${EXPECTED_MAIN_PAGE_URL}
 
 Verify Authentication And Authorization Link

@@ -7,7 +7,7 @@ Documentation				Localization texts for add group page
 ...							add_group=Add group
 ...							name=Name:
 ...							permissions=Permissions:
-...							available_permissions_title=Available permissions
+...							available_permissions_title=Available permissions${SPACE}
 ...							available_permissions_dropdown_content=admin | log entry | Can add log entry\nadmin | log entry | Can change log entry\nadmin | log entry | Can delete log entry\nauth | group | Can add group\nauth | group | Can change group\nauth | group | Can delete group\nauth | permission | Can add permission\nauth | permission | Can change permission\nauth | permission | Can delete permission\nauth | user | Can add user\nauth | user | Can change user\nauth | user | Can delete user\ncontenttypes | content type | Can add content type\ncontenttypes | content type | Can change content type\ncontenttypes | content type | Can delete content type\npostings | blog post | Can add blog post\npostings | blog post | Can change blog post\npostings | blog post | Can delete blog post\nsessions | session | Can add session\nsessions | session | Can change session\nsessions | session | Can delete session
 ...							admin_log_entry_can_add_log_entry=admin | log entry | Can add log entry
 ...							admin_log_entry_can_change_log_entry=admin | log entry | Can change log entry
@@ -33,7 +33,7 @@ Documentation				Localization texts for add group page
 ...							available_permissions_tooltip=This is the list of available permissions. You may choose some by selecting them in the box below and then clicking the "Choose" arrow between the two boxes.
 ...							choose_all_permissions=Choose all
 ...							help_to_select_multiple_permissions=Hold down "Control", or "Command" on a Mac, to select more than one.
-...							chosen_permissions=Chosen permissions
+...							chosen_permissions=Chosen permissions${SPACE}
 ...							chosen_permissions_tooltip=This is the list of chosen permissions. You may remove some by selecting them in the box below and then clicking the "Remove" arrow between the two boxes.
 ...							chosen_permissions_dropdown=
 ...							remove_all_permissions=Remove all
