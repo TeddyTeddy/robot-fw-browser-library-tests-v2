@@ -1,7 +1,7 @@
 *** Settings ***
 Documentation		Exposes "Verify Groups Page" keyword to DjangoAdminApp.robot
 ...					Uses Page Objects' (i.e. TopNav and GroupsPage) low level keywords such as:
-...						Verify <Element> Text   or
+...						Verify <Element> Text	or
 ...						Verify <Element> Link
 ...					where <Element> (e.g. Breadcrumbs) is in the corresponding PO (i.e. GroupsPage)
 
@@ -27,7 +27,7 @@ Verify Groups Page Links
 	[Arguments]		${group_name}
 	Verify Top Nav Links
 	GroupsPage.Verify Home Link
-	GroupsPage.Verify Authentication and Authorization Link
+	GroupsPage.Verify Authentication And Authorization Link
 	GroupsPage.Verify Add Group Link
 	IF 	$group_name
 		GroupsPage.Verify Dynamic Link For Group Name		${group_name}
@@ -39,6 +39,3 @@ Verify Groups Page
 	Verify Groups Page Texts	 ${username}		${group_name}
 	Verify Groups Page Links	${group_name}
 	GroupsPage.Verify Url
-
-
-

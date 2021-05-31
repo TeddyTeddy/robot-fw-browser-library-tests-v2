@@ -3,8 +3,9 @@ Documentation			Contains links for Confirm Page
 ...						Contains also the low level keywords that can act on the page
 Resource				../Texts/ConfirmPageTexts.resource
 
+
 *** Variable ***
-${EXPECTED_CONFIRM_PAGE_URL} = 		${BASE_URL}admin/auth/group/
+${EXPECTED_CONFIRM_PAGE_URL} 		${BASE_URL}admin/auth/group/
 
 &{CONFIRM_PAGE_LINK}
 ...		home=/admin/
@@ -12,6 +13,7 @@ ${EXPECTED_CONFIRM_PAGE_URL} = 		${BASE_URL}admin/auth/group/
 ...		groups=/admin/auth/group/
 ...		cancel_deletion_button=#
 ...		group_to_be_deleted=admin\/auth\/group\/\(\?\:\\d\+\)\/change
+
 
 *** Keywords ***
 Verify Url

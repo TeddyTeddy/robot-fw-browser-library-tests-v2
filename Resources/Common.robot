@@ -6,12 +6,13 @@ Library							Browser		timeout=30s		auto_closing_level=SUITE	enable_presenter_mo
 
 *** Variables ***
 ${LOCATORS_PATH}				${EXECDIR}${/}Resources${/}Locators${/}
+${BROWSER}						chromium
 
 
 *** Keywords ***
 Begin Web Test
 	Load Locator Resources
-	New Browser 	browser=chromium	 headless=False
+	New Browser 	browser=${BROWSER}	 headless=False
 	New Context
 	New Page
 	Login As Admin
@@ -21,6 +22,7 @@ End Web Test
 	Close Browser
 
 Load Locator Resources
+	[Documentation]   Depending on the browser used, it loads the corresponding locator resource files
 	IF		'${BROWSER}'=='firefox' or '${BROWSER}'=='ff'
 	    Import Locators		${LOCATORS_PATH}Firefox
 	END

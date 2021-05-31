@@ -1,6 +1,7 @@
 *** Settings ***
 Documentation		Confirm page's elements' locators are defined here
 
+
 *** Variable ***
 &{CONFIRM_PAGE_LOCATOR}
 ...		breadcrumbs=//*[@id="container"]/div[2]

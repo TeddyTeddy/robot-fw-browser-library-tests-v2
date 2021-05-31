@@ -3,11 +3,12 @@ Documentation			Contains links for Group page
 ...						Contains also the low level keywords that can act on the page
 Resource				../Texts/GroupsPageTexts.resource
 
+
 *** Variable ***
 # EAV stands for Expected Attribute Value
-&{GROUPS_PAGE_EAV}		search_button_value=Search
+&{GROUPS_PAGE_EAV}					search_button_value=Search
 
-${EXPECTED_GROUPS_PAGE_URL} =  ${BASE_URL}admin/auth/group/
+${EXPECTED_GROUPS_PAGE_URL}			${BASE_URL}admin/auth/group/
 
 &{GROUPS_PAGE_LINK}
 ...		home=/admin/
@@ -104,7 +105,7 @@ Verify Dynamic Link For Group Name
 	[Arguments]			${group_name}
 	${added_group_locator} = 		Evaluate		$GROUPS_PAGE_LOCATOR['generic_group_element'] % $group_name
 	${observed_group_link} = 	Get Attribute		selector=${added_group_locator}		attribute=href
-	${is_link_correct} 		Evaluate		bool(re.search($GROUPS_PAGE_LINK['added_group'], $observed_group_link))		modules=re
+	${is_link_correct} =	Evaluate		bool(re.search($GROUPS_PAGE_LINK['added_group'], $observed_group_link))		modules=re
 	Should Be True		${is_link_correct}
 
 Verify Group Added

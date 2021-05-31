@@ -2,6 +2,7 @@
 Documentation		Group page's elements' locators are defined here
 Resource			../../Texts/GroupsPageTexts.resource
 
+
 *** Variable ***
 &{GROUPS_PAGE_LOCATOR}
 ...		breadcrumbs=//*[@id="container"]/div[2]

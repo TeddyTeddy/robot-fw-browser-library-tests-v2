@@ -1,6 +1,7 @@
 *** Settings ***
 Documentation		Add Group page's elements' locators are defined here
 
+
 *** Variable ***
 &{ADD_GROUP_PAGE_LOCATOR}
 ...		title=//*[@id="content"]/h1

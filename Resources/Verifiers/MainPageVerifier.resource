@@ -1,5 +1,5 @@
 *** Settings ***
-Documentation		Exposes "Verify Main Page" keyword to test suite(s)
+Documentation		Exposes "Verify Main Page" keyword to DjangoAdminApp.robot
 ...					Uses Page Objects' low level keywords such as:
 ...						Verify <Element> Text
 ...						Verify <Element> Link

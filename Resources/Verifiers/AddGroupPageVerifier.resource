@@ -1,7 +1,7 @@
 *** Settings ***
-Documentation		Exposes "Verify Add Group Page" keyword to the test suite(s)
+Documentation		Exposes "Verify Add Group Page" keyword to DjangoAdminApp.robot
 ...					Uses Page Objects' (i.e. TopNav and AddGroupPage) low level keywords such as:
-...						Verify <Element> Text   or
+...						Verify <Element> Text	or
 ...						Verify <Element> Link
 ...					where <Element> (e.g. Breadcrumbs) is in the corresponding PO (e.g. AddGroupPage)
 
@@ -40,7 +40,3 @@ Verify Add Group Page
 	Verify Add Group Page Texts	 ${username}
 	Verify Add Group Page Links
 	AddGroupPage.Verify Url
-
-
-
-

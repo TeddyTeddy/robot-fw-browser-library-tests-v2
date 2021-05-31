@@ -4,6 +4,7 @@ Documentation			Contains texts & links for Add Group page
 Resource				../Texts/AddGroupPageTexts.resource
 Library					Collections
 
+
 *** Variable ***
 # EAV stands for Expected Attribute Values for an element
 &{EAV}

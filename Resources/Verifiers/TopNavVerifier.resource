@@ -1,5 +1,5 @@
 *** Settings ***
-Resource		../PO/LoginPage.resource
+Documentation		Exposes the keywords to other *Verifier.resource files (e.g. AddGroupPageVerifier.resource)
 
 
 *** Keywords ***
